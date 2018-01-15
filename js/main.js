@@ -11,3 +11,9 @@ button.onclick = function() {
 		arrow.style.transform = 'rotate(90deg)';
 	}
 }
+
+$(document).ready(function() {
+	$('.searchButton').click(function() {
+		$('.searchForm').toggleClass('hide')
+	});
+});
