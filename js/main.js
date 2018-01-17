@@ -5,10 +5,10 @@ button.onclick = function() {
 	var arrow = document.querySelector('.backCalltoggleButton::after');
 	if (element.classList.contains('hide')) {
 		element.classList.remove('hide');
-		arrow.style.transform = 'rotate(0deg)';
+		arrow.classList.remove('hide');
 	} else {
 		element.classList.add('hide');
-		arrow.style.transform = 'rotate(90deg)';
+		arrow.classList.add('hide');
 	}
 }
 
