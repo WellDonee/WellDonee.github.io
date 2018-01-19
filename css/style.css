@@ -13,42 +13,34 @@ body {
 	margin: 0;
 	padding: 0;
 }
-::-webkit-input-placeholder {
-	font-family: 'DIN Pro';
-}
-::-moz-placeholder {
-	font-family: 'DIN Pro';
-}
-:-moz-placeholder {
-	font-family: 'DIN Pro';
-}
-:-ms-input-placeholder {
-	font-family: 'DIN Pro';
-}
 .container {
 	position: relative;
 	width: 1000px;
 	margin: 0 auto;
 }
 .headerTop {
-	height: 437px;
+	min-height: 437px;
 	background-image: url(../img/background.jpg);
 	background-repeat: no-repeat;
 	background-position: center center; 
 }
+.logoWrapper {
+	text-align: right;
+}
 .topLogo {
-	position: absolute;
-	right: 0;
-	top: 45px;
+	display: inline-block;
+	margin: 45px 25px 0 0;
+	text-align: right;
+}
+.formWrapper {
+	text-align: right;
 }
 .backCallFormWrapper {
 	text-align: center;
+	display: inline-block;
 	padding: 5px 30px;
 	background-color: #404040;
-	position: absolute;
-	right: 0;
 	width: 240px;
-	top: 165px;
 }
 .backCallallNumber {
 	font-size: 30px;
@@ -70,7 +62,6 @@ body {
 	-o-transition: all .2s;
 	transition: all .2s;
 	content: '\2193';
-	/*position: absolute;*/
 	display: inline-block;
 	padding-left: 5px;
 	font-size: 10px;
@@ -83,6 +74,7 @@ body {
 }
 .backCallForm input {
 	box-sizing: border-box;
+	font-family: 'DIN Pro';
 }
 .backCallInputPhone {
 	width: 100%;
